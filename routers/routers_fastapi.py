@@ -42,8 +42,6 @@ class RequestBodyData(BaseModel):
     YearsWithCurrManager: int
 
 
-
-
 @router.post('/')
 async def predict(request: RequestBodyData):
     result = PredictRH().predict(request.json())

@@ -1,13 +1,13 @@
 ###
-POST http://127.0.0.1:8000/ibm
+POST http://127.0.0.1:5000/account
 Content-Type: application/json
 
 {
-  "Age":37,
+  "Age":32,
   "BusinessTravel":"Travel_Rarely",
-  "DailyRate":1239,
-  "Department":"Human Resources",
-  "DistanceFromHome":8,
+  "DailyRate":4014,
+  "Department":"Sales",
+  "DistanceFromHome":60,
   "Education":2,
   "EducationField":"Other",
   "EnvironmentSatisfaction":3,
@@ -29,46 +29,9 @@ Content-Type: application/json
   "TotalWorkingYears":19,
   "TrainingTimesLastYear":4,
   "WorkLifeBalance":2,
-  "YearsAtCompany":10,
-  "YearsInCurrentRole":0,
-  "YearsSinceLastPromotion":4,
-  "YearsWithCurrManager":7
-}
-
-###
-POST http://127.0.0.1:8000/ibm/teste
-Content-Type: application/json
-
-{
-  "Age":37,
-  "BusinessTravel":"Travel_Rarely",
-  "DailyRate":1239,
-  "Department":"Human Resources",
-  "DistanceFromHome":8,
-  "Education":2,
-  "EducationField":"Other",
-  "EnvironmentSatisfaction":3,
-  "Gender":"Male",
-  "HourlyRate":89,
-  "JobInvolvement":3,
-  "JobLevel":2,
-  "JobRole":"Human Resources",
-  "JobSatisfaction":2,
-  "MaritalStatus":"Divorced",
-  "MonthlyIncome":4071,
-  "MonthlyRate":12832,
-  "NumCompaniesWorked":2,
-  "OverTime":"No",
-  "PercentSalaryHike":13,
-  "PerformanceRating":3,
-  "RelationshipSatisfaction":3,
-  "StockOptionLevel":0,
-  "TotalWorkingYears":19,
-  "TrainingTimesLastYear":4,
-  "WorkLifeBalance":2,
-  "YearsAtCompany":10,
-  "YearsInCurrentRole":0,
-  "YearsSinceLastPromotion":4,
-  "YearsWithCurrManager":7
+  "YearsAtCompany":2,
+  "YearsInCurrentRole":2,
+  "YearsSinceLastPromotion":2,
+  "YearsWithCurrManager":2
 }
 

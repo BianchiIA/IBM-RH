@@ -3,16 +3,17 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 from services.transform_dataset import TranformIBMRH
+from sklearn.preprocessing import OneHotEncoder
 
 import json
 
 class PredictRH:
     def __init__(self):
-        with open('models/variveis_modelo.pkl', 'rb') as f:
+        with open(r'C:\Users\Vinicius\Documents\DataProjets\ibm-rh\models\variveis_modelo.pkl', 'rb') as f:
             self.scaler, self.ohe, self.model = pickle.load(f)
 
     def teste(self, X):
-        t = pd.read_json(X)
+        t = X
         return t
 
     def _transform(self, X):
@@ -24,6 +25,6 @@ class PredictRH:
     def predict(self, X):
         x = self._transform(X)
         y = self.model.predict(x)
-        return y[0]
+        return y
 
 
